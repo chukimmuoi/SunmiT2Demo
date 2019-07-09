@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_domain_lock"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pop_shape"
+    android:drawableLeft="@drawable/lock_icon"
+    android:padding="16.0dip"
+    android:text="@string/lock_domain"
+    android:textColor="#ff000000"
+    android:textSize="16.0sp"
+    android:textStyle="bold" />

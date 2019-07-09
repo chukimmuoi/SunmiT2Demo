@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/unlock_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/m_back_bt"
+            android:layout_width="48.0dip"
+            android:layout_height="48.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginTop="30.0dip"
+            android:background="@drawable/pwd_back_arr" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15.0dip"
+            android:layout_marginTop="124.66998dip"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/m_pwd_dot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <LinearLayout
+                    android:id="@+id/m_pwd_dot_line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="30.0dip"
+                    android:layout_marginRight="30.0dip"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/m_pwd_dot_a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/pwd_dot_empty" />
+
+                    <ImageView
+                        android:id="@+id/m_pwd_dot_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20.0dip"
+                        android:background="@drawable/pwd_dot_empty" />
+
+                    <ImageView
+                        android:id="@+id/m_pwd_dot_c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20.0dip"
+                        android:background="@drawable/pwd_dot_empty" />
+
+                    <ImageView
+                        android:id="@+id/m_pwd_dot_d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20.0dip"
+                        android:background="@drawable/pwd_dot_empty" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/m_pwd_dot"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="52.669983dip">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/m_n1"
+                            android:layout_width="84.0dip"
+                            android:layout_height="84.0dip"
+                            android:layout_gravity="center"
+                            android:background="@drawable/num_bg_press"
+                            android:tag="N1"
+                            android:text="@string/key_num_1"
+                            android:textColor="#ffffffff"
+                            android:textSize="50.0dip" />
+
+                        <Button
+                            android:id="@+id/m_n2"
+                            android:layout_width="84.0dip"
+                            android:layout_height="84.0dip"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="34.669983dip"
+                            android:layout_marginRight="34.669983dip"
+                            android:background="@drawable/num_bg_press"
+                            android:tag="N2"
+                            android:text="@string/key_num_2"
+                            android:textColor="#ffffffff"
+                            android:textSize="50.0dip" />
+
+                        <Button
+                            android:id="@+id/m_n3"
+                            android:layout_width="84.0dip"
+                            android:layout_height="84.0dip"
+                            android:layout_gravity="center"
+                            android:background="@drawable/num_bg_press"
+                            android:tag="N3"
+                            android:text="@string/key_num_3"
+                            android:textColor="#ffffffff"
+                            android:textSize="50.0dip" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="22.669983dip"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/m_n4"
+                            android:layout_width="84.0dip"
+                            android:layout_height="84.0dip"
+                            android:layout_gravity="center"
+                            android:background="@drawable/num_bg_press"
+                            android:tag="N4"
+                            android:text="@string/key_num_4"
+                            android:textColor="#ffffffff"
+                            android:textSize="50.0dip" />
+
+                        <Button
+                            android:id="@+id/m_n5"
+                            android:layout_width="84.0dip"
+                            android:layout_height="84.0dip"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="34.669983dip"
+                            android:layout_marginRight="34.669983dip"
+                            android:background="@drawable/num_bg_press"
+                            android:tag="N5"
+                            android:text="@string/key_num_5"
+                            android:textColor="#ffffffff"
+                            android:textSize="50.0dip" />
+
+                        <Button
+                            android:id="@+id/m_n6"
+                            android:layout_width="84.0dip"
+                            android:layout_height="84.0dip"
+                            android:layout_gravity="center"
+                            android:background="@drawable/num_bg_press"
+                            android:tag="N6"
+                            android:text="@string/key_num_6"
+                            android:textColor="#ffffffff"
+                            android:textSize="50.0dip" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="22.669983dip"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/m_n7"
+                            android:layout_width="84.0dip"
+                            android:layout_height="84.0dip"
+                            android:layout_gravity="center"
+                            android:background="@drawable/num_bg_press"
+                            android:tag="N7"
+                            android:text="@string/key_num_7"
+                            android:textColor="#ffffffff"
+                            android:textSize="50.0dip" />
+
+                        <Button
+                            android:id="@+id/m_n8"
+                            android:layout_width="84.0dip"
+                            android:layout_height="84.0dip"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="34.669983dip"
+                            android:layout_marginRight="34.669983dip"
+                            android:background="@drawable/num_bg_press"
+                            android:tag="N8"
+                            android:text="@string/key_num_8"
+                            android:textColor="#ffffffff"
+                            android:textSize="50.0dip" />
+
+                        <Button
+                            android:id="@+id/m_n9"
+                            android:layout_width="84.0dip"
+                            android:layout_height="84.0dip"
+                            android:layout_gravity="center"
+                            android:background="@drawable/num_bg_press"
+                            android:tag="N9"
+                            android:text="@string/key_num_9"
+                            android:textColor="#ffffffff"
+                            android:textSize="50.0dip" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="22.669983dip"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="84.0dip"
+                            android:layout_height="84.0dip"
+                            android:layout_gravity="center"
+                            android:background="@drawable/num_bg_press"
+                            android:textColor="#ffffffff"
+                            android:textSize="60.0dip"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/m_n0"
+                            android:layout_width="84.0dip"
+                            android:layout_height="84.0dip"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="34.669983dip"
+                            android:layout_marginRight="34.669983dip"
+                            android:background="@drawable/num_bg_press"
+                            android:tag="N0"
+                            android:text="@string/key_num_0"
+                            android:textColor="#ffffffff"
+                            android:textSize="50.0dip" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <Button
+                                android:id="@+id/m_nd"
+                                android:layout_width="84.0dip"
+                                android:layout_height="84.0dip"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:background="@drawable/num_bg_press"
+                                android:tag="ND" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/pwd_delete_tag" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_pwd_unlock_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="48.0dip"
+            android:text="30S"
+            android:textColor="#ffffffff"
+            android:textSize="18.669983sp" />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="53.329987dip"
+            android:layout_marginTop="53.329987dip"
+            android:text="@string/tips_cancel"
+            android:textColor="#ffffffff"
+            android:textSize="18.669983sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="72.32999dip"
+            android:src="@drawable/lock_top" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="53.329987dip"
+            android:src="@drawable/lock_bottom" />
+    </RelativeLayout>
+</RelativeLayout>

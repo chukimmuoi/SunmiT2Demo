@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:andoird="http://schemas.android.com/apk/res/android"
+    andoird:layout_width="match_parent"
+    andoird:layout_height="match_parent"
+    andoird:orientation="vertical">
+
+    <LinearLayout
+        andoird:layout_width="match_parent"
+        andoird:layout_height="match_parent"
+        andoird:orientation="horizontal">
+
+        <LinearLayout
+            andoird:layout_width="0.0dip"
+            andoird:layout_height="match_parent"
+            andoird:layout_weight="1.0"
+            andoird:background="#ff42404c"
+            andoird:orientation="vertical">
+
+            <FrameLayout
+                andoird:layout_width="match_parent"
+                andoird:layout_height="93.32999dip"
+               >
+
+                <ImageView
+                    andoird:id="@+id/iv_back"
+                    andoird:layout_width="30.0dip"
+                    andoird:layout_height="30.0dip"
+                    andoird:layout_gravity="center_vertical"
+                    andoird:layout_marginStart="20.0dip"
+                    andoird:src="@drawable/pwd_back_arr" />
+
+                <TextView
+                    andoird:id="@+id/tv_more"
+                    andoird:layout_width="wrap_content"
+                    andoird:layout_height="match_parent"
+                    andoird:layout_marginStart="46.669983dip"
+                    andoird:gravity="center"
+                    andoird:text="@string/menus_more"
+                    andoird:textColor="#ffffffff"
+                    andoird:textSize="21.329987sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                andoird:id="@+id/fl_1"
+                andoird:layout_width="match_parent"
+                andoird:layout_height="66.66dip"
+                andoird:layout_gravity="start"
+                andoird:paddingStart="21.329987dip">
+
+                <TextView
+                    andoird:id="@+id/tv_device"
+                    andoird:layout_width="wrap_content"
+                    andoird:layout_height="wrap_content"
+                    andoird:layout_gravity="center_vertical"
+                    andoird:drawableStart="@drawable/more_menu_1"
+                    andoird:drawablePadding="12.659973dip"
+                    andoird:text="@string/more_title_1"
+                    andoird:textColor="#ffffffff"
+                    andoird:textSize="16.0sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                andoird:id="@+id/fl_2"
+                andoird:layout_width="match_parent"
+                andoird:layout_height="66.66dip"
+                andoird:paddingStart="21.329987dip">
+
+                <TextView
+                    andoird:id="@+id/tv_goods_manage"
+                    andoird:layout_width="wrap_content"
+                    andoird:layout_height="wrap_content"
+                    andoird:layout_gravity="center_vertical"
+                    andoird:drawableStart="@drawable/more_menu_2"
+                    andoird:drawablePadding="12.659973dip"
+                    andoird:text="@string/more_title_2"
+                    andoird:textColor="#ffffffff"
+                    andoird:textSize="16.0sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                andoird:id="@+id/fl_3"
+                andoird:layout_width="match_parent"
+                andoird:layout_height="66.66dip"
+                andoird:paddingStart="21.329987dip">
+
+                <TextView
+                    andoird:id="@+id/tv_pay_mode"
+                    andoird:layout_width="wrap_content"
+                    andoird:layout_height="wrap_content"
+                    andoird:layout_gravity="center_vertical"
+                    andoird:drawableStart="@drawable/more_menu_3"
+                    andoird:drawablePadding="12.659973dip"
+                    andoird:gravity="center"
+                    andoird:text="@string/more_title_3"
+                    andoird:textColor="#ffffffff"
+                    andoird:textSize="16.0sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                andoird:id="@+id/fl_4"
+                andoird:layout_width="match_parent"
+                andoird:layout_height="66.66dip"
+                andoird:visibility="gone"
+                andoird:paddingStart="21.329987dip">
+
+                <TextView
+                    andoird:id="@+id/tv_hand"
+                    andoird:layout_width="wrap_content"
+                    andoird:layout_height="wrap_content"
+                    andoird:layout_gravity="center_vertical"
+                    andoird:drawableStart="@drawable/more_menu_4"
+                    andoird:drawablePadding="12.659973dip"
+                    andoird:gravity="center"
+                    andoird:text="@string/more_title_4"
+                    andoird:textColor="#ffffffff"
+                    andoird:textSize="16.0sp" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            andoird:layout_width="0.0dip"
+            andoird:layout_height="match_parent"
+            andoird:layout_weight="3.5"
+            andoird:orientation="horizontal">
+
+            <FrameLayout
+                andoird:id="@+id/container"
+                andoird:layout_width="0.0dip"
+                andoird:layout_height="match_parent"
+                andoird:layout_weight="2.5" />
+
+            <FrameLayout
+                andoird:id="@+id/fragment_2"
+                andoird:layout_width="0.0dip"
+                andoird:layout_height="match_parent"
+                andoird:layout_weight="2.5"
+                andoird:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

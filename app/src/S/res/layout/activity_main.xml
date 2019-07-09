@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#ffe8edef"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65.32999dip"
+            android:layout_marginEnd="32.0dip"
+            android:layout_marginStart="32.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5.3299866dip"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5.3299866dip"
+                android:layout_weight="1"
+                android:gravity="center_vertical|start"
+                android:text="@string/menus_title"
+                android:textColor="#ff000000"
+                android:textSize="24.0sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="32.0dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/fl_unlock_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_user_lock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="44.0dip"
+                        android:alpha="0.0"
+                        android:gravity="center"
+                        android:textColor="#ff000000"
+                        android:textSize="16.0sp" />
+
+                    <FrameLayout
+                        android:layout_width="32.0dip"
+                        android:layout_height="32.0dip"
+                        android:layout_gravity="right"
+                        android:background="#ffe8edef">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/iv_user_head_icon"
+                            android:layout_width="32.0dip"
+                            android:layout_height="32.0dip"
+                            android:layout_gravity="right" />
+                    </FrameLayout>
+                </FrameLayout>
+
+                <View
+                    android:layout_width="1.3299866dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25.329987dip"
+                    android:layout_marginRight="25.329987dip"
+                    android:background="#44000000" />
+
+                <Button
+                    android:id="@+id/main_btn_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="@string/menus_more"
+                    android:textSize="18.659973sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.flipboard.bottomsheet.BottomSheetLayout
+                android:id="@+id/bottomSheetLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_no_goods"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/iv_empty_goods"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/emptyshopcar" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/iv_empty_goods"
+                            android:layout_marginTop="16.0dip"
+                            android:alpha="0.7"
+                            android:gravity="center"
+                            android:text="@string/goods_nothing"
+                            android:textColor="#ff000000"
+                            android:textSize="28.0sp" />
+                    </RelativeLayout>
+
+                    <android.support.v4.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/ll_drinks"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10.0dip"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="13.329987dip"
+                                    android:layout_marginEnd="32.0dip"
+                                    android:layout_marginStart="32.0dip"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="6.659973dip"
+                                        android:src="@drawable/drink" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="5.3299866dip"
+                                        android:alpha="0.7"
+                                        android:gravity="center_vertical"
+                                        android:text="@string/goods_juice"
+                                        android:textColor="#ff000000"
+                                        android:textSize="14.659973sp" />
+                                </LinearLayout>
+
+                                <com.sunmi.sunmit2demo.view.MyGridView
+                                    android:id="@+id/gv_drinks"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="32.0dip"
+                                    android:layout_marginStart="32.0dip"
+                                    android:columnWidth="13.329987dip"
+                                    android:listSelector="@android:color/transparent"
+                                    android:numColumns="4" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_snacks"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10.0dip"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="13.329987dip"
+                                    android:layout_marginEnd="32.0dip"
+                                    android:layout_marginStart="32.0dip"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="6.659973dip"
+                                        android:src="@drawable/icon_snacks" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="5.3299866dip"
+                                        android:alpha="0.7"
+                                        android:gravity="center_vertical"
+                                        android:text="@string/goods_snacks"
+                                        android:textColor="#ff000000"
+                                        android:textSize="14.659973sp" />
+                                </LinearLayout>
+
+                                <com.sunmi.sunmit2demo.view.MyGridView
+                                    android:id="@+id/gv_snacks"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="32.0dip"
+                                    android:layout_marginStart="32.0dip"
+                                    android:columnWidth="13.329987dip"
+                                    android:listSelector="@android:color/transparent"
+                                    android:numColumns="4" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_fruits"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10.0dip"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="12.329987dip"
+                                    android:layout_marginEnd="32.0dip"
+                                    android:layout_marginStart="32.0dip"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="6.659973dip"
+                                        android:src="@drawable/fruit" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="5.3299866dip"
+                                        android:alpha="0.7"
+                                        android:gravity="center_vertical"
+                                        android:text="@string/goods_fruit"
+                                        android:textColor="#ff000000"
+                                        android:textSize="14.659973sp" />
+                                </LinearLayout>
+
+                                <com.sunmi.sunmit2demo.view.MyGridView
+                                    android:id="@+id/gv_fruits"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="32.0dip"
+                                    android:layout_marginStart="32.0dip"
+                                    android:columnWidth="13.329987dip"
+                                    android:listSelector="@android:color/transparent"
+                                    android:numColumns="4" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_vegetables"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10.0dip"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="13.329987dip"
+                                    android:layout_marginEnd="32.0dip"
+                                    android:layout_marginStart="32.0dip"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="6.659973dip"
+                                        android:src="@drawable/icon_vegetables" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="5.3299866dip"
+                                        android:alpha="0.7"
+                                        android:gravity="center_vertical"
+                                        android:text="@string/goods_vegetables"
+                                        android:textColor="#ff000000"
+                                        android:textSize="14.659973sp" />
+                                </LinearLayout>
+
+                                <com.sunmi.sunmit2demo.view.MyGridView
+                                    android:id="@+id/gv_vegetables"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="32.0dip"
+                                    android:layout_marginStart="32.0dip"
+                                    android:columnWidth="13.329987dip"
+                                    android:listSelector="@android:color/transparent"
+                                    android:numColumns="4" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </android.support.v4.widget.NestedScrollView>
+                </FrameLayout>
+            </com.flipboard.bottomsheet.BottomSheetLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_k1_shopping_car"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/main_btn_car"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:background="#333333"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/iv_car"
+                        android:layout_width="wrap_content"
+                        android:layout_height="44dp"
+                        android:src="@drawable/car_gray" />
+
+                    <TextView
+                        android:id="@+id/tv_car_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/iv_car"
+                        android:layout_marginStart="-8dp"
+                        android:layout_toEndOf="@id/iv_car"
+                        android:background="@drawable/round"
+                        android:gravity="center"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_car_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@id/iv_car"
+                        android:textColor="#ffffff"
+                        android:textSize="30sp" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    >
+
+                <Button
+                    android:id="@+id/main_k1_btn_pay"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#999999"
+                    android:gravity="center"
+                    android:text="@string/shop_car_go_pay"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18.66sp" />
+                    <TextView
+                        android:id="@+id/vip_k1__pay"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/vip_pay_bg"
+                        android:gravity="center"
+                        android:text="@string/shop_car_vip_pay"
+                        android:textColor="#ffffffff"
+                        android:textSize="18.659973sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="0.6600001dip"
+        android:layout_height="match_parent"
+        android:background="#ffcfd3d4" />
+
+    <FrameLayout
+        android:id="@+id/fl_shopping_car"
+        android:layout_width="360dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/lly_shopcar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="63.329987dip"
+                android:background="#fff1f5f6">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="21.329987dip"
+                    android:alpha="0.7"
+                    android:gravity="center_vertical"
+                    android:text="@string/shop_car"
+                    android:textColor="#ff000000"
+                    android:textSize="18.659973sp" />
+
+                <TextView
+                    android:id="@+id/main_btn_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="21.329987dip"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="@string/shop_car_clear"
+                    android:textColor="#ff000000"
+                    android:textSize="18.659973sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6600001dip"
+                android:background="#ffe9ebec" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="53.329987dip"
+                android:background="#fff1f5f6"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:alpha="0.7"
+                    android:gravity="center_vertical|start"
+                    android:paddingStart="21.329987dip"
+                    android:text="@string/shop_car_code"
+                    android:textColor="#ff000000"
+                    android:textSize="18.659973sp" />
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:alpha="0.7"
+                    android:gravity="center_vertical|start"
+                    android:paddingStart="21.329987dip"
+                    android:text="@string/shop_car_goods_name"
+                    android:textColor="#ff000000"
+                    android:textSize="18.659973sp" />
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:alpha="0.7"
+                    android:gravity="center_vertical|start"
+                    android:paddingStart="21.329987dip"
+                    android:text="@string/shop_car_unit_money"
+                    android:textColor="#ff000000"
+                    android:textSize="18.659973sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6600001dip"
+                android:background="#ffe9ebec" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0"
+                android:background="#ffffffff">
+
+                <ListView
+                    android:id="@+id/lv_menus"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@null"
+                    android:listSelector="@null" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6600001dip"
+                android:background="#ffe9ebec" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="65.32999dip"
+                android:background="#ffffffff">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="21.329987dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/shop_car_totle2"
+                    android:textColor="#ff212121"
+                    android:textSize="18.659973sp" />
+
+                <TextView
+                    android:id="@+id/main_tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="21.329987dip"
+                    android:gravity="center_vertical"
+                    android:text="¥0.00"
+                    android:textColor="#fffc5436"
+                    android:textSize="24.0sp" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/main_ll_pay"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:background="#fffc5436"
+                        android:gravity="center"
+                        android:minHeight="60.0dip"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/main_btn_pay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/shop_car_go_pay"
+                            android:textColor="#ffffffff"
+                            android:textSize="18.659973sp" />
+
+                        <TextView
+                            android:id="@+id/tv_face_pay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tips_pay_real"
+                            android:textColor="#ffffffff"
+                            android:textSize="14.0sp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/vip_pay"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/vip_pay_bg"
+                        android:gravity="center"
+                        android:text="@string/shop_car_vip_pay"
+                        android:textColor="#ffffffff"
+                        android:textSize="18.659973sp" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rtl_empty_shopcar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_empty_shopcar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/emptyshopcar" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_empty_shopcar"
+                android:layout_marginTop="16.0dip"
+                android:alpha="0.7"
+                android:gravity="center"
+                android:text="@string/shop_car_nothing"
+                android:textColor="#ff000000"
+                android:textSize="16.0sp" />
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

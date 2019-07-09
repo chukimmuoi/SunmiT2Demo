@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0.0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="2.0"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="74.66998dip"
+            android:orientation="horizontal"
+            android:paddingLeft="26.659973dip"
+            android:paddingRight="26.659973dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32.0dip"
+                android:text="@string/more_title_4"
+                android:textColor="#ff000000"
+                android:textSize="18.669983sp" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="72.0dip"
+            android:paddingLeft="26.659973dip"
+            android:paddingRight="26.659973dip">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/more_bracelet_open"
+                android:textColor="#ff222222"
+                android:textSize="16.0sp" />
+
+            <Switch
+                android:id="@+id/sw_bracelet_open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:switchMinWidth="61.329987dip"
+                android:textOff=""
+                android:textOn=""
+                android:thumb="@drawable/thumb"
+                android:track="@drawable/track" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginLeft="26.659973dip"
+            android:layout_marginRight="26.659973dip"
+            android:background="#ffe7e7e7" />
+
+        <RelativeLayout
+            android:id="@+id/rl_bracelet_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="72.0dip"
+            android:paddingLeft="26.659973dip"
+            android:paddingRight="26.659973dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="18.0dip"
+                android:text="@string/more_bracelet_pwd"
+                android:textColor="#ff222222"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@+id/tv_bracelet_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="21.329987dip"
+                android:drawableRight="@drawable/unlock_pwd_setting"
+                android:text="1111"
+                android:textColor="#ff222222"
+                android:textSize="13.329987sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginLeft="26.659973dip"
+            android:layout_marginRight="26.659973dip"
+            android:background="#ffe7e7e7" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_bracelet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="true" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_bracelet_user"
+        android:layout_width="0.0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:background="#fff6f7f9">
+
+        <LinearLayout
+            android:id="@+id/ll_bracelet_statue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_bracelet_statue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_bracelet_statue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24.669983dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bracelet_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/more_bracelet_statue_2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24.669983dip"
+                android:text="@string/more_bracelet_tips_overuser"
+                android:textColor="#ff000000"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/more_bracelet_tips_tip"
+                android:textColor="#77000000"
+                android:textSize="13.329987sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bracelet_user"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="74.66998dip"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="26.659973dip"
+            android:paddingRight="26.659973dip"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="72.0dip">
+
+                <TextView
+                    android:id="@+id/tv_bracelet_mac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="#ff222222"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@+id/tv_bracelet_connect_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="#99222222"
+                    android:textSize="13.329987sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.0dip"
+                android:background="#ffe7e7e7" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32.0dip"
+                android:gravity="bottom|center|left"
+                android:text="@string/more_bracelet_auto_info"
+                android:textColor="#ff000000"
+                android:textSize="13.329987sp" />
+
+            <ImageView
+                android:id="@+id/iv_bracelet_user_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16.0dip" />
+
+            <TextView
+                android:id="@+id/tv_bracelet_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip"
+                android:textColor="#ff000000"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@+id/tv_bracelet_user_mac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2.669983dip"
+                android:textColor="#ff000000"
+                android:textSize="13.329987sp" />
+
+            <TextView
+                android:id="@+id/tv_bracelet_singvalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="校准" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

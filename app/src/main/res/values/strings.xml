@@ -1,0 +1,314 @@
+<resources>
+    <string name="app_name">SunmiCashierDemo</string>
+    <string name="more_show_text">Show text</string>
+    <string name="more_show_code_text">Show QR code + text</string>
+    <string name="more_show_img">Show image</string>
+    <string name="more_show_php">Show slides</string>
+    <string name="more_show_video">Show video</string>
+    <string name="more_show_videos">Show video carousel</string>
+    <string name="more_show_menu">Show list</string>
+    <string name="more_show_menu_img">Show list + image</string>
+    <string name="more_show_menu_videos">Show list + video carousel</string>
+    <string name="more_show_menu_php">Show list + image carousel</string>
+    <string name="more_acquire_subinfo_main">Read hardware information from the main screen to determine size of customer screen</string>
+    <string name="more_acquire_subinfo_sub">Read the model value from the customer screen to determine size of customer screen</string>
+    <string name="more_clear_sub_path">Clear specify cache file of customer screen</string>
+    <string name="more_clear_sub_file">Clear current application\'s cacdsdsdsddsadashed files on the customer screen</string>
+    <string name="more_acquire_sub_path">Check customer screen specified cache directory size</string>
+    <string name="more_clear_subcache">Clear all cache files on customer screen</string>
+    <string name="more_open_sub_setting">Open the customer screen system settings</string>
+    <string name="more_show_sub_property">View time, date, time zone, language settings of customer screen</string>
+    <string name="more_print">Print a receipt</string>
+    <string name="more_camera_qrcode">Scan</string>
+    <string name="more_get_weight_result">Weight value</string>
+    <string name="more_peeled">Removed tare successfully</string>
+    <string name="more_unpeeled">Failed to remove tare</string>
+    <!-- T more-->
+    <string name="wx_pay">WeChat Pay</string>
+    <string name="more_show_text_success">Show text successfully</string>
+    <string name="more_show_text_fail">Show text failed</string>
+    <string name="more_show_text_exception">Show text abnormally</string>
+    <string name="more_send_code_success">Succeed to send QR code file</string>
+    <string name="more_send_code_fail">Failed to send QR code file</string>
+    <string name="more_show_code_text_success">Succeed to show QR code + text</string>
+    <string name="more_show_code_text_fail">Failed to show QR code + text</string>
+    <string name="more_acquire_subinfo_model">Get model info from main screen</string>
+    <string name="more_acquire_subinfo_sub_model">Get model info from customer screen</string>
+    <string name="more_clear_sub_file_success">Succeed to clear current application\'s cached files on customer screen</string>
+    <string name="more_clear_sub_file_fail">Failed to clear current application\'s cached files on customer screen</string>
+    <string name="more_clear_file_id_fail">Failed to delete the specified cache file ID</string>
+    <string name="more_clear_file_id_result">Delete the result of the specified cache file ID</string>
+    <string name="more_clear_subcache_success">Succeed to clear all cache files on customer screen</string>
+    <string name="more_clear_subcache_fail">Failed to clear all cache files on customer screen</string>
+    <string name="more_acquire_sub_path_size_byte">Number of bytes of all customer screen\'s cache file size</string>
+    <string name="more_acquire_sub_path_size">Check specified cache directory size of the customer screen</string>
+    <string name="more_send_img_success">Succeed to send images</string>
+    <string name="more_send_img_fail">Failed to send image</string>
+    <string name="more_send_allimg_success">Succeed to send all image files</string>
+    <string name="more_send_allimg_fail">Failed to send all image files</string>
+    <string name="more_send_video_success">Succeed to send all video files</string>
+    <string name="more_send_video_fail">Failed to send all video files</string>
+    <string name="more_show_menu_videos_success">Succeed to show video carousel + list</string>
+    <string name="more_show_menu_videos_fail">Failed to show video carousel + list</string>
+    <string name="more_show_menu_img_success">Succeed to show one image + list</string>
+    <string name="more_show_menu_img_fail">Failed to show one image + list</string>
+    <string name="more_send_single_img_success">Succeed to send single picture file</string>
+    <string name="more_send_single_img_fail">Failed to send single picture file</string>
+    <string name="more_show_single_img_success">Succeed to show single image</string>
+    <string name="more_show_single_img_fail">Failed to show single image</string>
+    <string name="more_send_allphp_success">Succeed to send all slide files</string>
+    <string name="more_send_single_video_success">Succeed to send single video file</string>
+    <string name="more_send_single_video_fail">Failed to send single video file</string>
+    <string name="more_show_single_video_success">Succeed to play single video file</string>
+    <string name="more_show_single_video_fail">Failed to send single video file</string>
+    <string name="more_send_videos_success">Succeed to send video carousel</string>
+    <string name="more_show_videos_success">Succeed to play video carousel</string>
+    <string name="more_show_videos_fail">Failed to play video carousel</string>
+    <string name="more_sub_size">Judging the secondary screen size (2)</string>
+    <string name="more_sub_cach_manager">Customer screen cache management (4)</string>
+    <string name="more_other">Others (5)</string>
+    <string name="divide">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -   end   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</string>
+
+    <!--  more-->
+    <string name="more_sub">Interact with customer screen</string>
+    <string name="more_show_thevideo">Play a video</string>
+    <string name="more_prints">Print</string>
+    <string name="more_camera">Camera</string>
+    <string name="more_camera_code">Scan by camera</string>
+    <string name="more_scale">Electronic scale</string>
+    <string name="more_get_weight">Take weight</string>
+    <string name="more_peele">Peeled</string>
+    <string name="more_clear">Clear</string>
+
+    <!--单位-->
+    <string name="units_tin">Can</string>
+    <string name="units_kg">KG</string>
+    <string name="units_each">Each</string>
+    <string name="units_bag">bag</string>
+    <string name="units_money">$</string>
+    <string name="units_money_units">$</string>
+
+    <!--商品-->
+    <string name="goods_juice">Juice</string>
+    <string name="goods_fruit">Fruit</string>
+    <string name="goods_snacks">Snacks</string>
+    <string name="goods_vegetables">Vegetables</string>
+    <string name="goods_apple">Apple</string>
+    <string name="goods_pear">Pear</string>
+    <string name="goods_banana">Banana</string>
+    <string name="goods_pitaya">Pitaya</string>
+    <string name="goods_coke">Coke</string>
+    <string name="goods_sprite">Sprite</string>
+    <string name="goods_red_bull">Red Bull</string>
+    <string name="goods_orange_juice">Orange juice</string>
+    <string name="goods_gift">Gift</string>
+    <string name="goods_sc_1">Kiwi</string>
+    <string name="goods_sc_2">Pineapple</string>
+    <string name="goods_sc_3">Lemon</string>
+    <string name="goods_sc_4">Tangerine</string>
+    <string name="goods_scs_1">Pepper</string>
+    <string name="goods_scs_2">Radish</string>
+    <string name="goods_scs_3">Cabbage</string>
+    <string name="goods_scs_4">Purple cabbage</string>
+
+    <string name="goods_1">Coca cola</string>
+    <string name="goods_2">Sprite</string>
+    <string name="goods_3">Green tea</string>
+    <string name="goods_4">Oolong</string>
+    <string name="goods_5">Pine nut </string>
+    <string name="goods_6">Melon seeds</string>
+    <string name="goods_7">Biscuits</string>
+    <string name="goods_8">Sea sedge biscuits</string>
+
+
+    <!--提示用语-->
+    <string name="tips_fruit_apple">Put the apple on the electronic scale</string>
+    <string name="tips_fruit_pear">Put the pear on the electronic scale</string>
+    <string name="tips_fruit_banana">Put the banana on the electronic scale</string>
+    <string name="tips_fruit_pitaya">Put the pitaya on electronic scale</string>
+    <string name="tips_fruit_please">Put the </string>
+    <string name="tips_fruit_put"> on electronic scale</string>
+    <string name="tips_pay_money">Please collect cash</string>
+    <string name="tips_pay_qrcode">Please scanning collection code</string>
+    <string name="tips_bye">Thank you</string>
+    <string name="tips_bye_again">See you next time!</string>
+    <string name="tips_cancel">Cancel</string>
+    <string name="tips_confirm">OK</string>
+    <string name="tips_success">Success</string>
+    <string name="tips_yes">OK</string>
+    <string name="tips_fail">Fail</string>
+    <string name="tips_net_fail">Network connection failed</string>
+    <string name="tips_exit">Press again to exit</string>
+    <string name="tips_pay_real">(Pay by ‘Face pay’.Amount:¥0.01)</string>
+    <string name="tips_no_find_smile_title">No ‘Face pay’ service</string>
+    <string name="tips_find_smile_content">This function is only for internal demonstration. If you need to open it, please contact the sales team of SUNMI</string>
+
+
+    <!--fruitdialog-->
+    <string name="fruit_unit_price">Unit price (dollar / kilogram)</string>
+    <string name="fruit_kg">Weight (kg)</string>
+    <string name="fruit_total">Subtotal (dollar)</string>
+    <string name="fruit_add">Add</string>
+
+    <!--paydialog-->
+    <string name="pay_money">Cash</string>
+    <string name="pay_ali_wx">WeChat Pay or Alipay</string>
+    <string name="pay_face">Face pay</string>
+    <string name="pay_face_tips">Close your face to the camera and start paying</string>
+    <string name="pay_face_tips_pay">Tips: Face pay is a real charge</string>
+    <string name="pay_noface">No available external equipment</string>
+    <string name="pay_noface_change">Check the connection or choose other payment methods</string>
+    <string name="pay_fail_tips">Please pay again or choose other means</string>
+    <string name="pay_need_money">Receivables: </string>
+    <string name="pay_give_money">Payable: </string>
+    <string name="pay_confirm">OK</string>
+    <string name="pay_confirm_true">Receivables：</string>
+    <string name="pay_pay_true">Already paid: </string>
+    <string name="pay_paying">Paying...</string>
+    <string name="pay_repay">Try again</string>
+    <string name="pay_get_moeny">PAY NOW</string>
+    <string name="pay_fail">Payment failed!</string>
+    <string name="pay_pay_moeny">Payment amount:</string>
+    <string name="pay_total_moeny">Total：</string>
+    <string name="pay_thank_you">Thanks for you coming</string>
+    <string name="pay_paying_wait">Paying,Please wait</string>
+    <string name="pay_again">Again</string>
+    <string name="pay_by_other">Other Methods Of Payment</string>
+
+    <!--收银演示菜单-->
+    <string name="menus_title">Cashier Demo</string>
+    <string name="menus_title1">Sunmi cashier Demo</string>
+    <string name="menus_title2">Cashier of Sunmi</string>
+    <string name="menus_title3">Welcome to Sunmi</string>
+    <string name="menus_number">SN</string>
+    <string name="menus_unit_price">Price</string>
+    <string name="menus_goods_name">Name</string>
+    <string name="menus_more">More</string>
+
+    <!--购物车菜单-->
+    <string name="shop_car">Cart</string>
+    <string name="shop_car_nothing">There are no items in your cart!</string>
+    <string name="goods_nothing">There are nothing items in your cart!</string>
+    <string name="shop_car_clear">Empty</string>
+    <string name="shop_car_total">Total</string>
+    <string name="shop_car_offer">Discount</string>
+    <string name="shop_car_number">Number</string>
+    <string name="shop_car_code">ID</string>
+    <string name="shop_car_receivable">receivable</string>
+    <string name="shop_car_goods_name">Name</string>
+    <string name="shop_car_unit_money">Amount</string>
+    <string name="shop_car_totle2">Total:</string>
+    <string name="shop_car_go_pay">PAY NOW</string>
+    <string name="shop_car_vip_pay">VIP PAY</string>
+    <string name="shop_car_vip_pay_tips">Input VIP Number</string>
+
+    <!--奶茶商品-->
+    <string name="tea_goods1">Signboard milk tea</string>
+    <string name="tea_goods2">Yuanyang duck milk tea</string>
+    <string name="tea_goods3">Cappuccino</string>
+    <string name="tea_goods4">Kumquat juice</string>
+    <string name="tea_goods5">Papaya juice</string>
+    <string name="tea_goods6">Double skin milk</string>
+    <string name="tea_goods7">Latte</string>
+    <string name="tea_goods8">Lemon juice</string>
+    <string name="tea_goods9">Apple Juice</string>
+    <string name="tea_goods10">Watermelon Juice</string>
+
+    <!--service状态-->
+    <string name="service_stop">Connection interrupts with remote service</string>
+    <string name="service_success">Succeed to Bind with remote service</string>
+    <string name="service_second">Communication with the customer screen service is good</string>
+    <string name="service_second_app">Communication with the customer screen App is good</string>
+
+    <!--小票打印-->
+    <string name="print_proofs">Print proofs</string>
+    <string name="print_order_number">Number:</string>
+    <string name="print_order_time">Time:</string>
+    <string name="print_payment_method">Payment:</string>
+    <string name="print_ali_wx">Alipay/WeChat</string>
+    <string name="print_tips_havemoney">This order is a real fixed amount transaction, please check</string>
+    <string name="print_tips_nomoney">This order is only a functional demonstration, non-real transaction</string>
+    <string name="print_thanks">Thanks for choosing SUNMI!</string>
+    <string name="print_total_payment">Total：</string>
+    <string name="print_real_payment">Paid-in：</string>
+    <string name="print_rmb">$</string>
+
+    <string name="more_title_1">Function demonstration</string>
+    <string name="more_title_2">Commodity management</string>
+    <string name="more_title_3">Method of payment</string>
+    <string name="more_title_4">Unlock by bands</string>
+
+
+    <string name="more_goods_1">Select the item to display</string>
+    <string name="more_goods_2">Weighing goods</string>
+    <string name="more_goods_3">Fruits and vegetables</string>
+    <string name="more_goods_4">Unweighing goods</string>
+    <string name="more_goods_5">Drinks and snacks</string>
+
+    <string name="more_paymode_1">Face pay</string>
+    <string name="more_paymode_2">Only Face pay</string>
+    <string name="more_paymode_vip">VIP PAY</string>
+    <string name="more_paymode_vip_tips">You do not need to input phone numbers ,when you use FacePay</string>
+    <string name="more_paymode_payment">SunmiPay</string>
+    <string name="more_paymode_payment_tips">Use SunmiPay to FacePay ,but you need install SunmiPay first</string>
+
+    <!--手环解锁-->
+    <string name="unlock_app_lock">系统已锁定</string>
+    <string name="unlock_hello">你好，</string>
+    <string name="unlock_lock_check_unlock">已锁定，点击解锁</string>
+    <string name="unlock_lock_pwd">密码解锁</string>
+    <string name="unlock_lock_tips">请佩戴好手环靠近设备解锁，或通过屏幕右上角数字密码锁解锁</string>
+    <string name="unlock_pwd_error">密码错误！</string>
+    <string name="unlock_pwd_tips">输入密码解锁</string>
+    <string name="unlock_success">解锁成功</string>
+    <string name="unlock_touch_header">轻触自己的头像</string>
+    <string name="unlock_unlocking">正在为你解锁...</string>
+    <string name="user_hello_am">上午好，</string>
+    <string name="user_hello_pm">下午好，</string>
+
+    <string name="more_bracelet_add">Add</string>
+    <string name="more_bracelet_auto_info">自动填充信息</string>
+    <string name="more_bracelet_conncet">已连接</string>
+    <string name="more_bracelet_connect_devices">可配对设备</string>
+    <string name="more_bracelet_connect_info">连接后分配角色信息</string>
+    <string name="more_bracelet_connected_devices">已配对设备</string>
+    <string name="more_bracelet_open">开启屏幕解锁</string>
+    <string name="more_bracelet_pwd">备用解锁密码</string>
+    <string name="more_bracelet_remove">删除</string>
+    <string name="more_bracelet_shop">麦当劳</string>
+    <string name="more_bracelet_statue_1">手环连接未开启</string>
+    <string name="more_bracelet_statue_2">暂未连接手环</string>
+    <string name="more_bracelet_statue_3">隔空解锁正在运行</string>
+    <string name="more_bracelet_tips_overuser">手环连接达到上限！</string>
+    <string name="more_bracelet_tips_tip">一台主设备最多能同时连接10个手环，如需连接新的手环，请断开其他已连接手环的连接状态</string>
+    <string name="more_bracelet_unconncet">未连接</string>
+    <string name="more_bracelet_user_1">艾玛</string>
+    <string name="more_bracelet_user_10">麦克里</string>
+    <string name="more_bracelet_user_11">米可</string>
+    <string name="more_bracelet_user_12">苏菡</string>
+    <string name="more_bracelet_user_13">羽超</string>
+    <string name="more_bracelet_user_2">陈一凡</string>
+    <string name="more_bracelet_user_3">杰瑞</string>
+    <string name="more_bracelet_user_4">肯豆</string>
+    <string name="more_bracelet_user_5">李大卫</string>
+    <string name="more_bracelet_user_6">林雨</string>
+    <string name="more_bracelet_user_7">露西</string>
+    <string name="more_bracelet_user_8">陆鹿</string>
+    <string name="more_bracelet_user_9">玛丽安</string>
+    <string name="lock_domain">锁定系统</string>
+    <string name="menus_lock">手动解锁</string>
+
+
+    <string name="key_num_0">0</string>
+    <string name="key_num_1">1</string>
+    <string name="key_num_2">2</string>
+    <string name="key_num_3">3</string>
+    <string name="key_num_4">4</string>
+    <string name="key_num_5">5</string>
+    <string name="key_num_6">6</string>
+    <string name="key_num_7">7</string>
+    <string name="key_num_8">8</string>
+    <string name="key_num_9">9</string>
+
+
+</resources>

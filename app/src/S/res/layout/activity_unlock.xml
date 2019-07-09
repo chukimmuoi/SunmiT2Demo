@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:andoird="http://schemas.android.com/apk/res/android"
+    andoird:layout_width="match_parent"
+    andoird:layout_height="match_parent"
+    andoird:background="@drawable/unlock_background">
+
+    <FrameLayout
+        andoird:id="@+id/fl_lock"
+        andoird:layout_width="match_parent"
+        andoird:layout_height="match_parent">
+
+        <LinearLayout
+            andoird:id="@+id/ll_unlock_empty"
+            andoird:layout_width="wrap_content"
+            andoird:layout_height="wrap_content"
+            andoird:layout_gravity="center"
+            andoird:gravity="center"
+            andoird:orientation="vertical"
+            andoird:visibility="invisible">
+
+            <FrameLayout
+                andoird:layout_width="191.0dip"
+                andoird:layout_height="191.0dip">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    andoird:id="@+id/iv_unlock_logo"
+                    andoird:layout_width="186.0dip"
+                    andoird:layout_height="186.0dip"
+                    andoird:layout_gravity="center" />
+
+                <com.sunmi.sunmit2demo.view.CircularProgressView
+                    andoird:id="@+id/cir_unlock_anim"
+                    andoird:layout_width="191.0dip"
+                    andoird:layout_height="191.0dip"
+                    andoird:background="@android:color/transparent"
+                    andoird:visibility="invisible" />
+            </FrameLayout>
+
+            <TextView
+                andoird:id="@+id/tv_unlock_user_name"
+                andoird:layout_width="wrap_content"
+                andoird:layout_height="wrap_content"
+                andoird:layout_marginTop="21.329987dip"
+                andoird:text="@string/unlock_app_lock"
+                andoird:textColor="#ffffffff"
+                andoird:textSize="21.329987sp" />
+
+            <TextView
+                andoird:id="@+id/tv_unlock_locking"
+                andoird:layout_width="240.0dip"
+                andoird:layout_height="wrap_content"
+                andoird:layout_marginTop="8.0dip"
+                andoird:gravity="center"
+                andoird:text="@string/unlock_lock_tips"
+                andoird:textColor="#ffffffff"
+                andoird:textSize="13.329987sp" />
+        </LinearLayout>
+
+        <FrameLayout
+            andoird:id="@+id/fl_check_user"
+            andoird:layout_width="match_parent"
+            andoird:layout_height="match_parent"
+            andoird:layout_marginBottom="75.0dip"
+            andoird:layout_marginTop="75.0dip">
+
+            <LinearLayout
+                andoird:layout_width="match_parent"
+                andoird:layout_height="match_parent"
+                andoird:animateLayoutChanges="true"
+                andoird:gravity="center"
+                andoird:orientation="vertical">
+
+                <com.sunmi.sunmit2demo.view.AutoWrapLinearLayout
+                    andoird:id="@+id/parent"
+                    andoird:layout_width="match_parent"
+                    andoird:layout_height="wrap_content"
+                    andoird:animateLayoutChanges="true"
+                    andoird:gravity="center"
+                    andoird:orientation="horizontal" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <TextView
+            andoird:id="@+id/tv_tips"
+            andoird:layout_width="wrap_content"
+            andoird:layout_height="wrap_content"
+            andoird:layout_gravity="center|top"
+            andoird:layout_marginTop="53.329987dip"
+            andoird:textColor="#ffffffff"
+            andoird:textSize="28.0px" />
+
+        <TextView
+            andoird:id="@+id/tv_unlock_pwd"
+            andoird:layout_width="wrap_content"
+            andoird:layout_height="wrap_content"
+            andoird:layout_gravity="center|right|top"
+            andoird:layout_marginRight="53.329987dip"
+            andoird:layout_marginTop="53.329987dip"
+            andoird:text="@string/unlock_lock_pwd"
+            andoird:textColor="#ffffffff"
+            andoird:textSize="18.669983sp" />
+
+        <ImageView
+            andoird:id="@+id/iv_unlock_anim"
+            andoird:layout_width="wrap_content"
+            andoird:layout_height="wrap_content"
+            andoird:layout_gravity="bottom|center"
+            andoird:layout_marginBottom="72.32999dip"
+            andoird:src="@drawable/lock_top" />
+
+        <ImageView
+            andoird:id="@+id/iv_unlock_anim2"
+            andoird:layout_width="wrap_content"
+            andoird:layout_height="wrap_content"
+            andoird:layout_gravity="bottom|center"
+            andoird:layout_marginBottom="53.329987dip"
+            andoird:src="@drawable/lock_bottom" />
+    </FrameLayout>
+
+    <FrameLayout
+        andoird:id="@+id/fl_domain_unlock"
+        andoird:layout_width="match_parent"
+        andoird:layout_height="match_parent"
+        andoird:visibility="gone">
+
+        <TextView
+            andoird:layout_width="wrap_content"
+            andoird:layout_height="wrap_content"
+            andoird:layout_gravity="center|top"
+            andoird:layout_marginTop="53.329987dip"
+            andoird:text="轻触自己的头像"
+            andoird:textColor="#ffffffff"
+            andoird:textSize="28.0px" />
+
+        <android.support.v7.widget.RecyclerView
+            andoird:id="@+id/recycler_unlock_all"
+            andoird:layout_width="wrap_content"
+            andoird:layout_height="wrap_content"
+            andoird:layout_gravity="center" />
+
+        <TextView
+            andoird:id="@+id/tv_domain_unlock_cancel"
+            andoird:layout_width="wrap_content"
+            andoird:layout_height="wrap_content"
+            andoird:layout_gravity="center|right|top"
+            andoird:layout_marginRight="53.329987dip"
+            andoird:layout_marginTop="53.329987dip"
+            andoird:text="@string/tips_cancel"
+            andoird:textColor="#ffffffff"
+            andoird:textSize="18.669983sp" />
+    </FrameLayout>
+</FrameLayout>

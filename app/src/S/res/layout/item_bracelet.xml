@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_bracelet_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="18.0dip"
+        android:paddingLeft="26.659973dip"
+        android:paddingRight="26.659973dip">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_head_icon"
+            android:layout_width="42.669983dip"
+            android:layout_height="42.669983dip"
+            android:layout_marginTop="18.0dip" />
+
+        <TextView
+            android:id="@+id/tv_ble_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginTop="18.0dip"
+            android:layout_toRightOf="@id/civ_head_icon"
+            android:textColor="#ff222222"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/tv_ble_mac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_ble_name"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginTop="6.3299866dip"
+            android:layout_toRightOf="@id/civ_head_icon"
+            android:textColor="#ff999999"
+            android:textSize="13.329987sp" />
+
+        <Button
+            android:id="@+id/btn_ble_connect"
+            android:layout_width="60.0dip"
+            android:layout_height="34.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/more_btn_click_bg"
+            android:textColor="#ffff6000"
+            android:textSize="13.329987sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginLeft="26.659973dip"
+        android:layout_marginRight="26.659973dip"
+        android:background="#ffe6e6e6" />
+</LinearLayout>

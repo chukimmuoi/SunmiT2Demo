@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ScrollView
+            android:layout_width="0.0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="93.32999dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="26.659973dip"
+                        android:gravity="center"
+                        android:text="@string/more_title_1"
+                        android:textColor="#ff000000"
+                        android:textSize="18.669983sp" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="21.329987dip"
+                    android:layout_marginEnd="53.329987dip"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16.0dip"
+                        android:layout_marginTop="16.0dip"
+                        android:text="@string/more_sub"
+                        android:textColor="#ffff6900"
+                        android:textSize="13.329987sp" />
+
+                    <Button
+                        android:id="@+id/btn_show_video"
+                        style="?android:borderlessButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="53.329987dip"
+                        android:background="@drawable/more_btn_bg"
+                        android:gravity="center_vertical"
+                        android:paddingStart="16.0dip"
+                        android:text="@string/more_show_thevideo"
+                        android:textColor="#ff000000"
+                        android:textSize="16.0sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16.0dip"
+                        android:layout_marginTop="21.329987dip"
+                        android:text="@string/more_prints"
+                        android:textColor="#ffff6900"
+                        android:textSize="13.329987sp" />
+
+                    <Button
+                        android:id="@+id/btn_print"
+                        style="?android:borderlessButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="53.329987dip"
+                        android:background="@drawable/more_btn_bg"
+                        android:gravity="center_vertical"
+                        android:paddingStart="16.0dip"
+                        android:text="@string/more_print"
+                        android:textColor="#ff000000"
+                        android:textSize="16.0sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16.0dip"
+                        android:layout_marginTop="21.329987dip"
+                        android:text="@string/more_camera"
+                        android:textColor="#ffff6900"
+                        android:textSize="13.329987sp" />
+
+                    <Button
+                        android:id="@+id/btn_scan"
+                        style="?android:borderlessButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="53.329987dip"
+                        android:background="@drawable/more_btn_bg"
+                        android:gravity="center_vertical"
+                        android:paddingStart="16.0dip"
+                        android:text="@string/more_camera_code"
+                        android:textColor="#ff000000"
+                        android:textSize="16.0sp" />
+
+                    <TextView
+                        android:id="@+id/tv_more_scale"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16.0dip"
+                        android:layout_marginTop="21.329987dip"
+                        android:text="@string/more_scale"
+                        android:textColor="#ffff6900"
+                        android:textSize="13.329987sp" />
+
+                    <Button
+                        android:id="@+id/btn_net"
+                        style="?android:borderlessButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="53.329987dip"
+                        android:background="@drawable/more_btn_bg"
+                        android:gravity="center_vertical"
+                        android:paddingStart="16.0dip"
+                        android:text="@string/more_get_weight"
+                        android:textColor="#ff000000"
+                        android:textSize="16.0sp" />
+
+                    <Button
+                        android:id="@+id/btn_clear"
+                        style="?android:borderlessButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="53.329987dip"
+                        android:layout_marginTop="16.0dip"
+                        android:background="@drawable/more_btn_bg"
+                        android:gravity="center_vertical"
+                        android:paddingStart="16.0dip"
+                        android:text="@string/more_clear"
+                        android:textColor="#ff000000"
+                        android:textSize="16.0sp" />
+
+                    <Button
+                        android:id="@+id/btn_tare"
+                        style="?android:borderlessButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="51.329987dip"
+                        android:layout_marginBottom="16.0dip"
+                        android:layout_marginTop="16.0dip"
+                        android:background="@drawable/more_btn_bg"
+                        android:gravity="center_vertical"
+                        android:paddingStart="16.0dip"
+                        android:text="@string/more_peele"
+                        android:textColor="#ff000000"
+                        android:textSize="16.0sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <View
+            android:layout_width="0.6600001dip"
+            android:layout_height="match_parent"
+            android:background="#ffe9ebec" />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="0.0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:background="#fff1f6f8"
+            android:scrollbars="none">
+
+            <TextView
+                android:id="@+id/tv_note"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="21.329987dip"
+                android:layout_marginEnd="21.329987dip"
+                android:layout_marginTop="21.329987dip"
+                android:textColor="#ff999999"
+                android:textSize="16.0sp" />
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

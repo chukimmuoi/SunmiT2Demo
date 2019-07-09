@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="413.32812dip"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pin_entry_dialog_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="55.329987dip"
+            android:layout_marginRight="55.329987dip"
+            android:layout_marginTop="42.669983dip"
+            android:gravity="center"
+            android:text="关闭后会断开所有手环的连接，同时禁用手环解锁，确认要关闭吗？"
+            android:textColor="#ff222222"
+            android:textSize="18.669983sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginTop="42.669983dip"
+            android:background="#ffe7e7e7" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60.0dip"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_confirm"
+                android:layout_width="0.0dip"
+                android:layout_height="match_parent"
+                android:layout_margin="12.0dip"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="@string/tips_yes"
+                android:textColor="#ff222222"
+                android:textSize="18.669983sp" />
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="match_parent"
+                android:background="#ffe7e7e7" />
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="0.0dip"
+                android:layout_height="match_parent"
+                android:layout_margin="12.0dip"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="@string/tips_cancel"
+                android:textColor="#ff222222"
+                android:textSize="18.669983sp" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

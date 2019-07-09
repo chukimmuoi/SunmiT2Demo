@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center">
+
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="289dp"
+        android:background="@drawable/pay_dialog_bg"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/apple_dialog"/>
+
+        <TextView
+            android:id="@+id/tv_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="24dp"
+            android:alpha="0.5"
+            android:text="@string/tips_fruit_apple"
+            android:textColor="#000000"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_des"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="14dp"
+            android:alpha="0.5"
+            android:text="@string/fruit_unit_price"
+            android:textColor="#000000"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv"
+            android:layout_marginStart="28dp"
+            android:text="8.90"
+            android:textColor="#000000"
+            android:textSize="28sp"/>
+
+        <TextView
+            android:id="@+id/quality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_price"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="6dp"
+            android:alpha="0.5"
+            android:text="@string/fruit_kg"
+            android:textColor="#000000"
+            android:textSize="10sp"/>
+
+
+        <TextView
+            android:id="@+id/tv_quality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/quality"
+            android:layout_marginStart="33dp"
+            android:text="1.58"
+            android:textColor="#000000"
+            android:textSize="28sp"/>
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/quality"
+            android:layout_marginStart="28dp"
+            android:layout_alignBaseline="@id/tv_quality"
+            android:src="@drawable/multi"/>
+
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_quality"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/addfruit_line"
+            android:layerType="software"/>
+
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="6dp"
+            android:alpha="0.5"
+            android:text="@string/fruit_total"
+            android:textColor="#000000"
+            android:textSize="10sp"/>
+
+
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/total"
+            android:layout_marginStart="28dp"
+            android:text="1.58"
+            android:textColor="#FC5346"
+            android:textSize="28sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tv_total"
+            android:layout_marginTop="10dp"
+            android:background="#E8EDEF"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btn_cancel"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:alpha="0.6"
+                android:background="@null"
+                android:text="@string/tips_cancel"
+                android:textColor="#000000"
+                android:textSize="12sp"/>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="#CEDADD"
+                />
+
+            <Button
+                android:id="@+id/btn_add"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:alpha="0.6"
+                android:background="@null"
+                android:text="@string/fruit_add"
+                android:textColor="#FC5346"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
